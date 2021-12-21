@@ -10,7 +10,7 @@ html{
 }
 
 ::-webkit-scrollbar {
-    width:12px;
+    width:10px;
 }
 ::-webkit-scrollbar-track {
     background: beige;
@@ -81,7 +81,7 @@ section .title::after{
 .navbar{
     position: fixed;
     width: 100%;
-    padding: 25px 0;
+    padding: 30px 0;
     z-index: 999;
     font-family: 'Ubuntu',sans-serif;
     transition: all 0.3s ease;
@@ -112,12 +112,12 @@ section .title::after{
     display: inline-block;
 }
 .menu li a {
+    display: block;
     color: beige;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
-
 }
 .menu li a:hover{
     color: darkred;
@@ -127,8 +127,6 @@ section .title::after{
     color: beige;
 }
 
-  
-/* home btn styling */
 .menu-btn{
     color: beige;
     font-size: 23px;
@@ -165,7 +163,7 @@ section .title::after{
     filter: brightness(90%);
 }
 
-/* home section styling */
+
 .home{
     display: flex;
     background: url("images/real.png") no-repeat center;
@@ -183,6 +181,10 @@ section .title::after{
 .home .max-width .row{
     margin-right: 0;
 }
+
+.home .home-content{
+    margin-top: 200px;
+}
 .home .home-content .text-1{
     font-size: 27px;
     padding-left: 15px;
@@ -190,7 +192,7 @@ section .title::after{
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
-    margin-left: 3px;
+    margin-left: -3px;
     padding-left: 15px;
 
 }   
@@ -207,15 +209,17 @@ section .title::after{
     display: inline-block;
     background: darkred;
     color: beige;
-    font-size: 25px;
-    padding: 10px;
-    margin-top: 20px;
+    font-size: 28px;
+    margin-left: 50px;
+    padding: 10px 30px;
+    margin-top: 120px;
+    font-weight: 500;
     border-radius: 10px;
     border: 2px solid darkred;
     transition: all 0.3s ease;
 }
-.home.home-content a:hover{
-    color: beige;
+.home .home-content a:hover{
+    color: darkred;
     background: none;
 }
 
@@ -243,8 +247,8 @@ section .title::after{
     color: darkred;
 }
 .about .about-content .right p{
+    font-size: medium;
     text-align: justify;
-    padding-right: 40px;
 }
 .about .about-content .right a{
     display: inline-block;
@@ -263,10 +267,10 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
+
 .services, .teams{
     color: beige;
-    background: #111;
+    background: rgb(82, 48, 64);
 }
 .services .title::before,
 .teams .title::before{
@@ -274,8 +278,9 @@ section .title::after{
 }
 .services .title::after,
 .teams .title::after{
-    background: #111;
+    background: rgb(82, 48, 64);
     content: "what i provide";
+    color: aliceblue;
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -309,7 +314,6 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/* skills section styling */
 
 .skills .title::after{
     content: "what i know";
@@ -321,11 +325,9 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-    padding-left: 10px;
 }
 .skills .skills-content .left p{
     text-align: justify;
-    padding-left: 10px;
 }
 .skills .skills-content .left a{
     display: inline-block;
@@ -371,22 +373,22 @@ section .title::after{
     background: crimson;
 }
 .skills-content .right .html::before{
-    width: 90%;
+    width: 80%;
 }
 .skills-content .right .css::before{
-    width: 60%;
+    width: 50%;
 }
 .skills-content .right .js::before{
-    width: 80%;
+    width: 70%;
 }
 .skills-content .right .php::before{
     width: 50%;
 }
 .skills-content .right .mysql::before{
-    width: 70%;
+    width: 60%;
 }
 
-/* teams section styling */
+
 .teams .title::after{
     content: "who I work with";
 }
@@ -449,7 +451,7 @@ section .title::after{
     background: darkred!important;
 }
 
-/* contact section styling */
+
 .contact .title::after{
     content: "get in touch";
 }
@@ -544,7 +546,9 @@ section .title::after{
   color: darkred;
   background: none;
 }
-/* footer section styling */
+
+
+
 footer{
     background: #111;
     padding: 15px 23px;
@@ -560,7 +564,7 @@ footer span a:hover{
 }
 
 
-/* responsive media query start */
+
 @media (max-width: 1104px){
     .about .about-content .left img{
         height: 350px;
