@@ -278,7 +278,7 @@ section .title::after{
 }
 .services .title::after,
 .teams .title::after{
-    background: none;
+    background: rgb(82, 48, 64);
     content: "what i provide";
     color: aliceblue;
 }
@@ -686,5 +686,9 @@ footer span a:hover{
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+    .services .title::after,
+    .teams .title::after{
+        font-size: 10px;
     }
 }
