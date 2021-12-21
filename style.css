@@ -183,7 +183,7 @@ section .title::after{
 }
 
 .home .home-content{
-    margin-top: 200px;
+    margin-top: 100px;
 }
 .home .home-content .text-1{
     font-size: 27px;
@@ -225,6 +225,7 @@ section .title::after{
 
 .about .title::after{
     content: "who i am";
+    background: #fff;
 }
 .about .about-content .left{
     width: 45%;
@@ -278,7 +279,7 @@ section .title::after{
 }
 .services .title::after,
 .teams .title::after{
-    background: rgb(82, 48, 64);
+    background: none;
     content: "what i provide";
     color: aliceblue;
 }
@@ -317,6 +318,7 @@ section .title::after{
 
 .skills .title::after{
     content: "what i know";
+    background: #fff;
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -454,6 +456,7 @@ section .title::after{
 
 .contact .title::after{
     content: "get in touch";
+    background: #fff;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
