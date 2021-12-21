@@ -111,7 +111,7 @@ section .title::after{
     list-style: none;
     display: inline-block;
 }
-.menu li a {
+.navbar .menu li a {
     display: block;
     color: beige;
     font-size: 18px;
@@ -119,7 +119,7 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
-.menu li a:hover{
+.navbar .menu li a:hover{
     color: darkred;
 }
 
